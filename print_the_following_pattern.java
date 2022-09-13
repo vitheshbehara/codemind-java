@@ -1,27 +1,18 @@
 import java.util.Scanner;
 class Main
 {
- public static void main(String[] args)
- {
-   Scanner Sc=new Scanner(System.in);
-
-         int r,i,j,k;
-         int c=1;
-         r=Sc.nextInt();
-     
-        for(i=0;i<r;i++)
+    public static void main(String args[])
+    {
+        int r;
+        Scanner Sc=new Scanner(System.in);
+        r=Sc.nextInt();
+        for(int i=r;i>=1;i--)
         {
-        for(j=r-1;j>i;j--)
-        {
-            System.out.print(" ");
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(j);
+            }
+            System.out.println();
         }
-        for(k=0;k<c;k++)
-        {
-            System.out.print(c-j);
-        }
-        c=c+2;
-        System.out.println();
-        }
-      Sc.close();
-  }
- }
+    }
+}
