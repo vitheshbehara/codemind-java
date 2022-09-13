@@ -6,11 +6,11 @@ class Main
      Scanner Sc=new Scanner(System.in);
      int r,i,j;
      r=Sc.nextInt();
-     for(i=r;i>=1;i--)
+     for(i=1;i<=r;i++)
      {
-       for(j=r;j>=1;j--)
+       for(j=1;j<=r;j++)
        {
-         System.out.print(j+" ");
+         System.out.print((char)(64+i)+" ");
        }
        System.out.println();
      }
