@@ -1,18 +1,17 @@
-import java.util.*;
-class Sample
+import java.util.Scanner;
+class Main
 {
     public static void main(String args[])
     {
-        Scanner s=new Scanner(System.in);
-        int t=s.nextInt();
-        while(t-->0)
+        int t,a,b,sum=0;
+        Scanner Sc=new Scanner(System.in);
+        t=Sc.nextInt();
+        while(t>0)
         {
-            int a=s.nextInt();
-             int b=s.nextInt();
-             int c=a+b;
-               System.out.println(c);
+            a=Sc.nextInt();
+            b=Sc.nextInt();
+            sum=a+b;
+            System.out.println(sum);
         }
-      
-        
     }
 }
